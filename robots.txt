@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mitsugu.github.io/disability-diving/sitemap.xml
