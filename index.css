@@ -1,0 +1,143 @@
+body {
+	max-width: 900px;
+	width: 90%;
+	margin-top:auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:6em;
+}
+h1 {
+	text-align:center;
+	padding:0.5em 0em 0.5em 0.5em;
+	border-width:0px 0px 1px 5px;
+	border-style:solid;
+	border-color:silver;
+	line-height:1.25em;
+}
+h2 {
+	padding:0.5em 0em 0.5em 0.5em;
+	border-width:3px 0px 0px 0px;
+	border-style:solid;
+	border-color:silver;
+}
+p {
+	text-indent:1em;
+}
+/*
+img.l {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+img.p {
+    height: auto;
+    max-width: 512px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+*/
+.warning {
+    background-color: #fff9db;
+    border: 2px solid #fab005;
+    padding: 1em;
+    border-radius: 8px;
+    margin: 2em 0;
+}
+ul > li {
+	margin-top:0.5em;
+}
+ul > li >  p {
+	margin-top:0em;
+	margin-bottom:0em;
+}
+ul > li > div > p {
+	margin-top:0em;
+	margin-bottom:0em;
+}
+#trouble-content {
+	display: none;
+}
+#trouble-content:target {
+	display: block;
+}
+#trouble-content_02 {
+	display: none;
+}
+
+#trouble-content_02:target {
+	display: block;
+}
+
+table:is(.specifics) {
+	table-layout: auto;
+}
+table:is(.specifics) th {
+	width: 1em;
+	white-space: nowrap;
+}
+table:is(.issue, .abstruct, .specifics) {
+	border-collapse:collapse;
+	width:100%;
+}
+
+table.specifics tr:nth-child(9n + 1) th {
+	background-color:silver;
+}
+table:is(.issue,.abstruct, .specifics) th {
+	padding-left:1em;
+	padding-right:1em;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color:lightgray;
+}
+table:is(.specifics) tr th {
+	vertical-align:top;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+table:is(.abstruct, .specifics) :is(th,td) {
+	text-align:left;
+}
+table:is(.issue, .abstruct, .specifics) td {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+	vertical-align: top;
+}
+table:is(.issue, .abstruct, .specifics) td :is(ul, li) {
+	margin-top:0em;
+	margin-bottom:0em;
+}
+table:is(.specifics) dt {
+	font-weight: bold;
+}
+table.specifics tbody tr th {
+	width: fit-content;
+}
+
+.remove_top_margin {
+	margin-top:0em;
+}
+.remove_bottom_margin {
+	margin-bottom:0em;
+}
+.mid-footnote{
+  font-size:0.75em;
+  color:gray;
+}
+
+h4, h5, h6 {
+	font-size:1rem;
+}
+:is(.warning, .caution) {
+	color:red;
+	font-weight:bold;
+}
+
+.pb {
+	break-before: always;
+}
